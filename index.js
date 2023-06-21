@@ -104,5 +104,6 @@ function showCard(){
         messageEl.textContent = "You Lose, Better Luck Next Time"
         playerEl.textContent = player.name+": $"+(player.chips-10)
         player.chips -= 10
+        document.getElementById("myBtn3").disabled = true;
     }
 }
