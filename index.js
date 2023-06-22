@@ -89,6 +89,7 @@ function showCard(){
     document.getElementById("myBtn2").disabled = true;
     if(sum > (dealer[0] + dealer[1])  ){
         messageEl.textContent = "Congrats, You won"
+        document.getElementById("myBtn3").disabled = true;
         playerEl.textContent = player.name+": $"+(player.chips+30)
         player.chips += 30
         
